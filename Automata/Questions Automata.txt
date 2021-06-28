@@ -1,0 +1,23 @@
+﻿
+AUTOMATA PROGRAMMING:
+
+DFA:
+
+
+1. Write a automata code for the Language that accepts all and only those strings that contain 001
+2. Write a automata code for L(M) ={ w | w has an even number of 1s}
+3. Write a automata code for L(M) ={0,1}*
+4. Write a automata code for L(M)=a + aa*b.
+5. Write a automata code for L(M)={(ab)n | n ∈ N}
+6. Write a automata code for Let Σ = {0, 1}. 
+                Given DFAs for {}, {ε}, Σ*, and Σ+.
+
+
+
+NFA: 
+
+
+1. Write a automata code for the Language that accepts all end with 01
+2. Write a automata code for L(M)= a + aa*b + a*b.
+3. Write a automata code for Let Σ = {0, 1}. 
+        Given NFAs for {}, {ε}, {(ab)n | n ∈ N}, which has regular expression (ab)*.
