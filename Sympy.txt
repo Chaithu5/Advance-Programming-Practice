@@ -1,0 +1,38 @@
+﻿Solve the following using symbolic paradigm:
+i. Calculate sqrt (2) with 100 decimals.
+ii. Calculate (1/2+1/3) in rational arithmetic.
+iii. Calculate the expanded form of (x+y) ^ 6.
+iv. Simplify the trigonometric expression sin (x) / cos (x)
+v. Calculate sin x -xx^3n
+
+
+
+Q1. 
+from sympy import * 
+expr = N(sqrt(2),100) 
+print(expr) 
+
+
+Q2. 
+from sympy import * 
+a = Rational(1,2) 
+b = Rational(1,4) 
+print(a + b) 
+
+
+Q3. 
+from sympy import * 
+x, y, z, t = symbols('x y z t') 
+expr = expand((x + y)**6) print(expr) 
+
+
+Q4. 
+from sympy import * 
+x, y, z, t = symbols('x y z t') 
+expr = simplify(sin(x)/cos(x)) print(expr) 
+
+
+Q5. 
+from sympy import * 
+x, y, z, t = symbols('x y z t') 
+expr = simplify((sin(x)-x)/x**3) limexpr = limit(expr, x, 0) print(limexpr) 

@@ -1,0 +1,143 @@
+﻿
+
+
+1. Develop a python program using decision control structure find the leap years between the
+year limit 2000 to 2025. 
+
+Code:
+year = 2000
+for year in range(2000,2025): if(year%4==0):
+if(year%100==0 and year%400==0):
+print ("{0} is a leap year\n".format(year))
+
+
+
+
+
+
+else:
+print ("{0} is a leap year\n".format(year))
+
+
+
+
+
+  
+
+2. Develop a python program to check the given number is Armstrong number or not using
+iteration control structures. 
+
+Code:
+num = 153
+sum = 0 temp = num
+
+
+while temp > 0:
+digit = temp % 10 sum += digit ** 3 temp //= 10
+
+
+if num == sum:
+print(num,"is an Armstrong number") else:
+print(num,"is not an Armstrong number")
+
+
+
+
+
+  
+
+
+
+3. Solve the towers of Hanoi problem using recursive function in python language (n=3
+discs) 
+
+Code:
+def TowerOfHanoi(n , source, destination, auxiliary): if n==1:
+print ("Move disk 1 from source",source,"to destination",destination) return
+TowerOfHanoi(n-1, source, auxiliary, destination)
+print ("Move disk",n,"from source",source,"to destination",destination) TowerOfHanoi(n-1, auxiliary, destination, source)
+
+
+n = 3 TowerOfHanoi(n,'A','B','C')
+
+
+
+  
+
+4. Develop a python code declare the function swap and perform swapping operation of two
+numbers without using temp variables.
+
+ Code:
+def swap(a, b):
+
+
+
+
+a = a + b
+
+
+
+
+b = a - b
+
+
+
+
+a = a - b
+
+
+
+
+print("After Swapping: a = ", a, ", b = ", b)
+
+
+
+
+a = 5
+b = 10
+
+
+
+
+swap(a, b) 
+
+
+
+
+ 
+5. Develop a python program which should have all function prototypes to perform any four
+arithmetic operations. 
+
+Code:
+def add(num1,num2):
+print ("the sum of {0} and {1} is {2}".format(num1,num2,num1+num2))
+
+
+
+
+def sub(num1,num2):
+print ("the sub of {0} and {1} is {2}".format(num1,num2,num1-num2))
+
+
+
+
+def mul(num1,num2):
+print ("the mul of {0} and {1} is {2}".format(num1,num2,num1*num2))
+
+
+
+
+def div(num1,num2):
+print ("the div of {0} and {1} is {2}".format(num1,num2,num1/num2))
+
+
+
+
+num1 = 10
+num2 = 5
+
+
+
+
+add(num1,num2) sub(num1,num2) mul(num1,num2) div(num1,num2) 
+

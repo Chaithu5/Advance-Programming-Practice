@@ -1,0 +1,161 @@
+﻿
+1. Write a Python program to show that the variables with a value assigned in class
+declaration, are class variables and variables inside methods and constructors are
+instance variables.
+
+
+
+
+class CSStudent:
+ 
+    stream = 'cse'            
+ 
+    def __init__(self, roll):
+   
+        self.roll = roll       
+  
+# Objects of CSStudent class
+a = CSStudent(101)
+b = CSStudent(102)
+  
+print(a.stream)  
+print(b.stream)  
+print(a.roll)    
+
+
+print(CSStudent.stream) 
+
+
+
+
+
+  
+
+2. Write a Python program to show that we can create instance variables inside methods
+
+
+class meh: 
+    print() 
+  
+    def access_method(self):  
+        inVar = 'inside_method'
+        print("Inside_method3", inVar) 
+uac = meh() 
+uac.access_method() 
+'''class two'''
+class mehh: 
+    print() 
+ 
+  
+    def access_method(self): 
+        print()  
+  
+uaac = mehh() 
+uaac.access_method()
+
+
+
+
+
+
+
+
+
+3. Write a python code to implement following scenario, In a company Factory, staff
+and Office staff have certain common properties - all have a name, designation, age
+etc. Thus they can be grouped under a class called CompanyMember. Apart from
+sharing those common features, each subclass has its own characteristic - FactoryStaff
+gets overtime allowance while OfficeStaff gets traveling allowance for an office job.
+The derived classes ( FactoryStaff & OfficeStaff) has its own characteristic and,
+in addition, they inherit the properties of the base class (CompanyMember).
+
+
+
+
+
+
+class CompanyMember:
+    '''Represents Company  Member.'''
+    def __init__(self, name, designation, age):
+        self.name = name
+        self.designation = designation
+        self.age = age
+    def tell(self):
+            '''Details of an employee.'''
+            print('Name: ', self.name,'\nDesignation : ',self.designation, '\nAge : ',self.age)
+            
+class FactoryStaff(CompanyMember):
+    '''Represents a Factory Staff.'''
+    def __init__(self, name, designation, age, overtime_allow):
+        CompanyMember.__init__(self, name, designation, age)
+        self.overtime_allow = overtime_allow
+        CompanyMember.tell(self)
+        print('Overtime Allowance : ',self.overtime_allow)
+        
+class OfficeStaff(CompanyMember):
+    '''Represents a Office Staff.'''
+    def __init__(self, name, designation, age, travelling_allow):
+        CompanyMember.__init__(self, name, designation, age)
+        self.marks = travelling_allow
+        CompanyMember.tell(self)
+        print('Traveling Allowance : ',self.travelling_allow)
+        
+FactoryStaff('mehh','electrician',45,202)
+
+  
+
+
+
+
+
+
+
+
+
+4. Write a python program to access hidden variable outside the class using object and
+which threw an exception.
+
+
+
+
+class MyClass: 
+  
+    __hiddenVariable = 2
+ 
+    def add(self, increment): 
+        self.__hiddenVariable += increment 
+        print (self.__hiddenVariable) 
+   
+myObject = MyClass()      
+myObject.add(2) 
+myObject.add(5) 
+  
+print (myObject.__hiddenVariable) 
+
+
+
+
+
+
+  
+
+
+
+5. Write a Python program to demonstrate that hidden members can be accessed outside
+a class.
+
+
+
+
+class MyClass: 
+  
+    # Hidden member of MyClass 
+    __hiddenVariable = 10
+
+
+myObject = MyClass()      
+print(myObject._MyClass__hiddenVariable) 
+
+
+
+
